@@ -1,0 +1,12 @@
+.logo-container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 35px auto;
+  align-items: center;
+  gap: 5px;
+  padding: 12.5px;
+}
+
+.logo-container img {
+  width: 100%;
+}

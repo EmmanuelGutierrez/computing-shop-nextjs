@@ -1,0 +1,92 @@
+@use '../../styles/vars';
+
+.ShoppingCart {
+  background-color: vars.$black-grey;
+  border-radius: 25px 0 0 25px;
+  position: fixed;
+  right: -600px;
+  top: 61px;
+  bottom: auto;
+  height: calc(100vh - 59px);
+  width: 360px;
+  /* Se limita a la caja padre, el margin y padding no sobrepasaran la caja padre */
+  box-sizing: border-box;
+  padding: 24px;
+  transition: 350ms;
+  overflow-y: scroll;
+}
+
+.ShoppingCart.active {
+  right: 0;
+  transition: 850ms;
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 60px 200px;
+  align-items: center;
+}
+.title-container img {
+  justify-self: center;
+  transform: rotate(180deg) scale(1.5);
+  cursor: pointer;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: vars.$dark-blue;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.order p:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+
+.order p span:nth-child(1) {
+  font-size: vars.$md;
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  filter: hue-rotate(35deg);
+  transition: 1s;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.primary-button {
+  background-color: vars.$neon-blue;
+  color: vars.$white;
+  width: 100%;
+  font-size: vars.$md;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .ShoppingCart {
+    width: 100%;
+  }
+}

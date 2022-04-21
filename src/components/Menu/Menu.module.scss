@@ -1,0 +1,70 @@
+@use '../../styles/vars';
+
+.Menu {
+  width: 145px;
+  height: auto;
+  border: 1px solid vars.$light-neon-blue;
+  background-color: vars.$black;
+  padding: 20px 20px 0 20px;
+  position: absolute;
+  top: 60px;
+  right: 00px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(-50%) scale(0);
+  user-select: none;
+}
+
+.Menu-active {
+  user-select: auto;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.Menu ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+.Menu ul li {
+  text-align: end;
+}
+
+.Menu ul li:nth-child(1),
+.Menu ul li:nth-child(2) {
+  font-weight: bold;
+}
+
+.Menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid vars.$very-light-pink;
+}
+
+.Menu ul li:last-child a {
+  color: vars.$light-neon-blue;
+  font-size: vars.$sm;
+}
+
+.Menu ul li a {
+  color: vars.$white;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.Menu ul li a:hover {
+  border-right: 3px solid vars.$light-neon-blue;
+  border-left: 3px solid vars.$light-neon-blue;
+  transition: 0.5s;
+}
+
+@media (max-width: 640px) {
+  .Menu {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+@use '@styles/vars';
+.Checkout {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: grid;
+  place-items: center;
+}
+
+.Checkout-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 300px;
+  padding: 15px;
+  border-radius: 25px;
+  background: vars.$transparent-white;
+}
+.Checkout-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: vars.$dark-blue;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.order p:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+
+.order p span:nth-child(1) {
+  font-size: vars.$md;
+  font-weight: bold;
+}
+.order p span:nth-child(2) {
+  font-size: vars.$sm;
+  color: vars.$very-light-pink;
+}

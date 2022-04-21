@@ -1,0 +1,38 @@
+.ProductInfo {
+  margin: 24px 24px 0 24px;
+}
+
+.ProductInfo p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.ProductInfo p:nth-child(2) {
+  font-size: var(--md);
+  color: var(--very-light-pink);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.ProductInfo h3 {
+  border-top: 1px solid white;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-top: 12px;
+}
+
+.ProductInfo p:nth-child(4) {
+  font-size: var(--sm);
+  color: var(--very-light-pink);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

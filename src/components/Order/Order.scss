@@ -1,0 +1,29 @@
+.Order {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--transparent-white);
+  border: 1px solid var(--light-neon-blue);
+  margin-bottom: 12px;
+  padding: 0 12px;
+}
+
+.Order p:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.Order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+
+.Order p span:nth-child(1) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+.Order p span:nth-child(2) {
+  font-size: var(--sm);
+  color: var(--very-light-pink);
+}

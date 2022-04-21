@@ -1,0 +1,114 @@
+@use '../../styles/vars';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: vars.$black;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 25px;
+  z-index: 1003;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid vars.$light-neon-blue;
+}
+
+.menu {
+  display: none;
+}
+
+/* .Nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid vars.$light-neon-blue;
+   position: relative; 
+   box-sizing: border-box; 
+} */
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left ul {
+  margin-left: 12px;
+}
+
+.navbar-left > ul,
+.navbar-right > ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-left > ul li a,
+.navbar-right > ul li a {
+  text-decoration: none;
+  color: vars.$very-light-pink;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  transition: 0.5s;
+  padding: 8px;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  color: vars.$light-neon-blue;
+  border-right: 1px solid vars.$light-neon-blue;
+  border-left: 1px solid vars.$light-neon-blue;
+  transition: 0.5s;
+}
+
+.navbar-email {
+  background-color: vars.$black;
+  font-size: vars.$sm;
+  color: vars.$very-light-pink;
+  margin-right: 12px;
+  cursor: pointer;
+  height: 100%;
+  z-index: 1001;
+}
+
+.navbar-email-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: vars.$black;
+  p {
+    margin: auto 0;
+  }
+}
+
+.navbar-shopping-cart {
+  position: relative;
+
+  div {
+    width: 16px;
+    height: 16px;
+    background-color: vars.$light-neon-blue;
+    border-radius: 50%;
+    font-size: vars.$sm;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: block;
+    margin: auto 0;
+    height: 100%;
+  }
+  .navbar-left ul,
+  .navbar-email {
+    display: none;
+  }
+}

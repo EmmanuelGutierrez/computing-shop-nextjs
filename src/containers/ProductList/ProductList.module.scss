@@ -1,0 +1,17 @@
+.ProductList {
+  margin-top: 60px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px;
+  margin-top: 26px;
+  place-content: center;
+}
+
+@media (max-width: 640px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+}

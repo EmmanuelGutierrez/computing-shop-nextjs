@@ -1,0 +1,104 @@
+@use './vars';
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.title {
+  font-size: vars.$lg;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.subtitle {
+  color: vars.$very-light-pink;
+  font-size: vars.$md;
+  font-weight: 300;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  margin-bottom: 36px;
+  justify-self: center;
+  display: none;
+}
+
+.label {
+  font-size: vars.$sm;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.input {
+  background-color: vars.$text-input-field;
+  border: none;
+  border-radius: 8px;
+  height: 32px;
+  font-size: vars.$md;
+  padding: 4px;
+  margin: 6px 0;
+}
+
+.button:hover {
+  filter: hue-rotate(35deg);
+  transition: 1s;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.primary-button {
+  background-color: vars.$neon-blue;
+  color: vars.$white;
+  width: 100%;
+  font-size: vars.$md;
+  height: 50px;
+}
+
+.tertiary-button {
+  background-color: #c92f95;
+  color: vars.$white;
+  width: 100%;
+  font-size: vars.$md;
+  height: 50px;
+}
+
+.secondary-button {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid vars.$light-neon-blue;
+  border-radius: 8px;
+  color: vars.$light-neon-blue;
+  width: 100%;
+  font-size: vars.$md;
+
+  height: 50px;
+}
+
+.login-button {
+  margin: 14px 0 30px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form a {
+  color: vars.$light-neon-blue;
+  font-size: vars.$sm;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 52px;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    display: block;
+  }
+}
