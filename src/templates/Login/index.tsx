@@ -1,7 +1,9 @@
-import React, { FormEvent, useRef } from "react";
-import "./Login.scss";
+import React, { FormEvent, useRef } from 'react';
+import './Login.scss';
 
-import logo from "@logos/logo.gif";
+import logo from '@logos/logo.gif';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Login = (): JSX.Element => {
   const form = useRef<HTMLFormElement>(null);
@@ -11,8 +13,8 @@ const Login = (): JSX.Element => {
     if (form.current) {
       const formData = new FormData(form.current);
       const data = {
-        username: formData.get("email"),
-        password: formData.get("password"),
+        username: formData.get('email'),
+        password: formData.get('password'),
       };
       console.log(data);
     }
@@ -21,39 +23,23 @@ const Login = (): JSX.Element => {
   return (
     <div className="Login">
       <div className="Login-container">
-        <img src={logo} alt="logo" className="logo" />
+        <Image src={logo} alt="logo" className="logo" />
         <form action="" className="form" ref={form}>
           <h1 className="title">Welcome</h1>
           <label htmlFor="email" className="label">
             Email address
           </label>
-          <input
-            type="text"
-            name="email"
-            placeholder="example@example.com"
-            className="input input-email"
-          />
+          <input type="text" name="email" placeholder="example@example.com" className="input input-email" />
           <label htmlFor="password" className="label">
             Password
           </label>
-          <input
-            type="password"
-            name="password"
-            placeholder="*******"
-            className="input input-password"
-          />
-          <button
-            type="submit"
-            className="primary-button login-button button"
-            onClick={handleSubmit}
-          >
+          <input type="password" name="password" placeholder="*******" className="input input-password" />
+          <button type="submit" className="primary-button login-button button" onClick={handleSubmit}>
             Log in
           </button>
-          <a href="/">Forgot my password</a>
+          <Link href="/">Forgot my password</Link>
         </form>
-        <button className="secondary-button signup-button button">
-          Sign up
-        </button>
+        <button className="secondary-button signup-button button">Sign up</button>
       </div>
     </div>
   );

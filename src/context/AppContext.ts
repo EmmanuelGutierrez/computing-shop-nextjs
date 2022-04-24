@@ -1,14 +1,13 @@
-import React from "react";
-import { IInitialState } from "../hooks/useInitialState";
-import { IProduct } from "../interfaces/IProduct";
+import { IInitialState } from '@interfaces/IInitialState';
+import React from 'react';
+import { IProduct } from '../interfaces/IProduct';
 
-type AppContextType = {
+export type AppContextType = {
   state: IInitialState;
   addToCart: (product: IProduct) => void;
   removeToCart: (product: IProduct) => void;
   decrementCart: (product: IProduct) => void;
+  incrementProduct: (product: IProduct) => void;
 };
 
-const AppContext = React.createContext<AppContextType | Object>({});
-
-export { AppContext, AppContextType };
+export const AppContext = React.createContext<AppContextType | undefined>(undefined);

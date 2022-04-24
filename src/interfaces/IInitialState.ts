@@ -1,4 +1,4 @@
-import { IProduct } from "./IProduct";
+import { IProduct } from './IProduct';
 
 export interface IInitialState {
   cart: IProduct[];

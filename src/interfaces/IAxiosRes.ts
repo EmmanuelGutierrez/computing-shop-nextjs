@@ -1,5 +1,3 @@
-import { AxiosResponse } from "axios";
-
 export interface responseData<param> {
   error: boolean;
   status: number;

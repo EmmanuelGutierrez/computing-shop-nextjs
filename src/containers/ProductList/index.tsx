@@ -1,13 +1,15 @@
+import { config } from 'config/config';
 import React from 'react';
 import { ProductCard } from '../../components/ProductCard';
 import { useGetProducts } from '../../hooks/useGetProducts';
-import { IProduct } from '../../interfaces/IProduct';
 import style from './ProductList.module.scss';
 
-const API = 'http://localhost:4001/products/';
+/* API= http://localhost:4001/ */
+const API_PROD = `${config.API}products/`;
+console.log(config.API);
 
 const ProductList = (): JSX.Element => {
-  const products = useGetProducts(API);
+  const products = useGetProducts(API_PROD);
   return (
     <main className={style.ProductList}>
       <div className={style['cards-container']}>

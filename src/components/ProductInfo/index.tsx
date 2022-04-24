@@ -1,5 +1,6 @@
 import React from 'react';
 import addToCart from '@icons/bt_add_to_cart.svg';
+import Image from 'next/image';
 const ProductInfo = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const ProductInfo = () => {
           Gaming Keyboard with Tactile Brown Switches and 16.8 Million RGB Lighting for PC, Tablet, Cell Phone
         </p>
         <button className="primary-button button add-to-cart-button">
-          <img src={addToCart} alt="add-to-cart" />
+          <Image src={addToCart} alt="add-to-cart" />
           Add to cart
         </button>
       </div>

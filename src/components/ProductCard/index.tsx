@@ -5,9 +5,8 @@ import removeToCartIcon from '@icons/bt_remove_to_cart.svg';
 import { IProduct } from '../../interfaces/IProduct';
 import { AppContext, AppContextType } from '../../context/AppContext';
 import styles from './ProductCard.module.scss';
-import globalClasses from '@styles/globalClasses.module.scss';
 import Image from 'next/image';
-import { Loader } from '@componets/Loader';
+/* import { Loader } from '@componets/Loader'; */
 
 const ProductCard = (prod: IProduct) => {
   const { addToCart, removeToCart, state } = useContext(AppContext) as AppContextType;

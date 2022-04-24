@@ -1,33 +1,31 @@
-
-  $white: #ffffff;
-  $black: #000000;
-  $very-light-pink: #c7c7c7;
-  $text-input-field: #f7f7f7;
-  $transparent-white: rgba(255, 255, 255, 0.1);
-  $black-grey: rgb(26, 24, 24);
-  $dark-blue: #2f2e40;
-  $neon-blue: #5848ff;
-  $light-neon-blue: #776dff;
-  /* Medidas */
-  $sm: 14px;
-  $md: 16px;
-  $lg: 18px;
+$white: #ffffff;
+$black: #000000;
+$very-light-pink: #c7c7c7;
+$text-input-field: #f7f7f7;
+$transparent-white: rgba(255, 255, 255, 0.1);
+$black-grey: rgb(26, 24, 24);
+$dark-blue: #2f2e40;
+$neon-blue: #5848ff;
+$light-neon-blue: #776dff;
+/* Medidas */
+$sm: 14px;
+$md: 16px;
+$lg: 18px;
 
 @mixin myVars {
-  my-black:$black;
-  my-white:$white;
-  very-light-pink:$very-light-pink;
-  text-input-field:$text-input-field;
-  transparent-white:$transparent-white;
-  black-grey:$black-grey;
-  dark-blue:$dark-blue;
-  neon-blue:$neon-blue;
-  light-neon-blue:$light-neon-blue;
-
+  my-black: $black;
+  my-white: $white;
+  very-light-pink: $very-light-pink;
+  text-input-field: $text-input-field;
+  transparent-white: $transparent-white;
+  black-grey: $black-grey;
+  dark-blue: $dark-blue;
+  neon-blue: $neon-blue;
+  light-neon-blue: $light-neon-blue;
 }
 
 @mixin mySizes {
-  sm:$sm;
-  md:$md;
-  lg:$lg;
+  sm: $sm;
+  md: $md;
+  lg: $lg;
 }

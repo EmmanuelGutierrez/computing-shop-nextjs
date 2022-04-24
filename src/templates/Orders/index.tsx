@@ -1,6 +1,6 @@
-import React from "react";
-import { Order } from "../../components/Order";
-import "./Orders.scss";
+import React from 'react';
+import { Order } from '../../components/Order';
+import './Orders.scss';
 
 const Orders = (): JSX.Element => {
   return (

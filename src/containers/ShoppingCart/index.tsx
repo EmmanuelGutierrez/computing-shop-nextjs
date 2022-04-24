@@ -41,7 +41,7 @@ const ShoppingCart = (props: props): JSX.Element => {
           </p>
           <p>$ {total}</p>
         </div>
-        <Link href={'/checkout'}>
+        <Link href={'/checkout'} passHref>
           <button
             className={`${globalClasses['primary-button']}  ${globalClasses.button}  ${style['add-to-cart-button']}`}
           >

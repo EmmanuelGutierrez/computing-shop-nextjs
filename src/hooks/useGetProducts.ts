@@ -15,7 +15,7 @@ const useGetProducts = (API: string) => {
       }
     };
     axiosData();
-  }, []);
+  }, [API]);
 
   return products;
 };

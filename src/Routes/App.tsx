@@ -13,13 +13,11 @@ import CreateAccount from '../templates/CreateAccount';
 import Checkout from '../templates/Checkout';
 import { Orders } from '../templates/Orders';
 import { AppContext } from '../context/AppContext';*/
-import { useInitialState } from '../hooks/useInitialState'; 
 
 const App = (): JSX.Element => {
-  const initialState = useInitialState();
   return (
-<div>
-    {/* <AppContext.Provider value={initialState}>
+    <div>
+      {/* <AppContext.Provider value={initialState}>
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -39,7 +37,6 @@ const App = (): JSX.Element => {
         </Layout>
       </BrowserRouter>
     </AppContext.Provider> */}
-
     </div>
   );
 };

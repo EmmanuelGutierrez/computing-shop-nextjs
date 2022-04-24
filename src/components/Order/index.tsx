@@ -1,7 +1,8 @@
-import React from "react";
-import "./Order.scss";
+import React from 'react';
+import './Order.scss';
 
-import arrow from "../../assets/icons/flechita.svg";
+import arrow from '../../assets/icons/flechita.svg';
+import Image from 'next/image';
 
 const Order = (): JSX.Element => {
   return (
@@ -11,7 +12,7 @@ const Order = (): JSX.Element => {
         <span>6 articles</span>
       </p>
       <p>$37000,00</p>
-      <img src={arrow} alt="flechita" />
+      <Image src={arrow} alt="flechita" />
     </div>
   );
 };

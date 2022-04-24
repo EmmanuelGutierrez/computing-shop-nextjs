@@ -1,6 +1,5 @@
-import React, { ChangeEvent, ChangeEventHandler, useContext } from 'react';
+import React, { useContext } from 'react';
 
-import iconClose from '@icons/icon_close.png';
 import { IProduct } from '../../interfaces/IProduct';
 import { AppContext, AppContextType } from '../../context/AppContext';
 import style from './ShoppingCartItem.module.scss';
@@ -9,10 +8,10 @@ import Image from 'next/image';
 
 const ShoppingCartItem = (props: IProduct) => {
   const { images, title, price, quantity } = props;
-  const { addToCart, decrementCart } = useContext(AppContext) as AppContextType;
+  const { incrementProduct, decrementCart } = useContext(AppContext) as AppContextType;
 
   const handleIncrementClick = (prod: IProduct) => {
-    addToCart(prod);
+    incrementProduct(prod);
   };
   const handleDecrementClick = (prod: IProduct) => {
     decrementCart(prod);

@@ -8,7 +8,7 @@ import globalClasses from '@styles/globalClasses.module.scss';
 
 const Logo = () => {
   return (
-    <Link href="/">
+    <Link href="/" passHref>
       <figure className={`${style['logo-container']} ${globalClasses['cursor-pointer']}`}>
         <Image src={logo} alt="logo" />
         <figcaption>GAMESTORE</figcaption>

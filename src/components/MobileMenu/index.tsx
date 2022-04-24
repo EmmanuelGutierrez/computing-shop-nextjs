@@ -6,7 +6,7 @@ import globalClasses from '@styles/globalClasses.module.scss';
 
 interface props {
   menuToggle: boolean;
-  setMenuToggle: Function;
+  setMenuToggle: (menuToggle: boolean) => void;
 }
 
 const MobileMenu = (props: props): JSX.Element => {
